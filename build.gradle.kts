@@ -26,12 +26,13 @@ repositories {
 }
 
 dependencies {
+	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
+	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
-	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    testImplementation("com.github.stefanbirkner:system-lambda:1.2.1")
 }
 
 kotlin {
