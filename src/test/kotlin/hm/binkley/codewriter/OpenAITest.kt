@@ -9,6 +9,7 @@ import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.Serializable
+import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 import kotlin.test.assertTrue
 
@@ -44,6 +45,7 @@ data class Choice(
 )
 
 class OpenAITest {
+    @Disabled("Turn on when API key is available")
     @Test
     fun `should receive a response from OpenAI API`() = runBlocking {
         val apiKey = System.getenv("OPENAI_API_KEY") ?: error("Missing API key")
