@@ -1,4 +1,11 @@
-Creative Commons Legal Code
+The license for this code base and the accompanying wiki pages has changed to
+CC0 (Creative Commons Zero 1.0 Universal) from Public Domain.
+This is to accomodate those legal jurisdictions not supporting dedication of
+rights to the public until author's death.
+No author of these works is a lawyer: Please consult with an accredited expert
+in your jurisdiction for legal advice.
+
+# Creative Commons Zero 1.0 Universal license
 
 CC0 1.0 Universal
 
@@ -119,3 +126,31 @@ express Statement of Purpose.
  d. Affirmer understands and acknowledges that Creative Commons is not a
     party to this document and has no duty or obligation with respect to
     this CC0 or use of the Work.
+
+For more information, please refer to
+<https://creativecommons.org/publicdomain/zero/1.0/> and to
+<https://creativecommons.org/public-domain/cc0/>.
+
+# Former Public Domain license
+
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or distribute
+this software, either in source code form or as a compiled binary, for any
+purpose, commercial or non-commercial, and by any means.
+
+In jurisdictions that recognize copyright laws, the author or authors of this
+software dedicate any and all copyright interest in the software to the public
+domain. We make this dedication for the benefit of the public at large and to
+the detriment of our heirs and successors. We intend this dedication to be an
+overt act of relinquishment in perpetuity of all present and future rights to
+this software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to <http://unlicense.org/>.
