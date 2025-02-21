@@ -1,25 +1,39 @@
 package hm.binkley.codewriter
 
+import com.github.stefanbirkner.systemlambda.SystemLambda.restoreSystemProperties
 import com.github.stefanbirkner.systemlambda.SystemLambda.tapSystemOut
-import org.junit.jupiter.api.BeforeAll
+
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
 class MainTest {
     @Test
     fun `cmd line should do nothing without complaint`() {
-        val output = tapSystemOut { main(emptyArray()) }
+        restoreSystemProperties() {
+            System.setProperty("logging.level.root", "OFF")
+            val output = tapSystemOut { main(emptyArray()) }
 
-        // Assert that the program produces no output
-        assertEquals("", output)
+            assertEquals("\n", output)
+        }
     }
 
-    companion object {
-        @BeforeAll
-        @JvmStatic
-        fun disableLogging() {
-            // Disable Spring Boot logging
+    @Test
+    fun `cmd line produce one line for AI`() {
+        restoreSystemProperties() {
             System.setProperty("logging.level.root", "OFF")
+            val output = tapSystemOut {
+                main(
+                    arrayOf(
+                        "I",
+                        "am",
+                        " the ",
+                        "very ",
+                        "model."
+                    )
+                )
+            }
+
+            assertEquals("I am the very model.\n", output)
         }
     }
 }

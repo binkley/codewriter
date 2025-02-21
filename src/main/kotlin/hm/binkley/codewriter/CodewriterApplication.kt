@@ -7,5 +7,8 @@ import org.springframework.boot.runApplication
 class CodewriterApplication
 
 fun main(args: Array<String>) {
-	runApplication<CodewriterApplication>(*args)
+    val prompt = args.joinToString(" ") { it.trim() }
+    println(prompt)
+
+    runApplication<CodewriterApplication>(prompt)
 }
