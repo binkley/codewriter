@@ -19,7 +19,10 @@ class CodeWriterTest {
 
     @Test
     fun `write a new main source file`() {
-        val content = "Major modern general."
+        val content = """
+package bob.uncle
+fun mineral() = Unit
+""".trimIndent()
         writeMainSource(
             packageName = "bob.uncle",
             fileName = "Foo",
@@ -34,7 +37,12 @@ class CodeWriterTest {
 
     @Test
     fun `write a new test source file`() {
-        val content = "Test the general."
+        val content = """
+package bob.uncle
+import kotlin.test.Test
+@Test
+fun `test the general`() = Unit
+""".trimIndent()
         writeTestSource(
             packageName = "bob.uncle",
             fileName = "FooTest",
